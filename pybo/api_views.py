@@ -11,7 +11,12 @@ from .serializers import QuestionSerializer, AnswerSerializer
 from .models import Question, Answer
 
 
-@api_view(['GET', 'POST'])
+def question_api_view(ModelViewSet):
+    def get(se)
+
+
+
+"""@api_view(['GET', 'POST'])
 def questions_api_view(request: Request):
     if request.method == 'GET':
         queryset = Question.objects.all()
@@ -26,8 +31,10 @@ def questions_api_view(request: Request):
                 return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
             else:
                 serializer.save(author=request.user)
-                return Response(data=serializer.data)
+                return Response(data=serializer.data)"""
 
+
+def question_api_view(ModelViewSet):
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def question_api_view(request: Request, question_id: int):
